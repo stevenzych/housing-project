@@ -88,6 +88,7 @@ After iterating through all these models, we return to the initial question:
 > "What factors bring down the price of a house the most, with least impact to overall quality?"
 
 I've done the dirty work behind the scenes, and can offer you this summary. The following conditions all have *negative* correlations with price, meaning that if they are met, that house will be a  better deal. Here's what to do:
+
 **1. Buy south of Mercer Island,** which puts you outside of the downtown region, into sectors 3 and 4.
 **1. Buy where the neighbors have big yards.** Generally, these homes are in less urban areas (again, not downtown) and consequently can spread out. This is based on `sqft_lot15`.
 **1. Buy new within reason.** Interestingly enough, `yr_built` has a negative correlation with price as well. Many older homes may be prized for their more aesthetic architecture or history.
