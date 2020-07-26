@@ -58,7 +58,7 @@ This impacted the RMSE of the model ever so slightly, bringing it down just a ha
 
 It wasn't just `price` that had some extreme outliers. The columns `['price', 'bedrooms', 'sqft_lot', 'sqft_living', 'sqft_basement', 'sqft_lot15']` all had outliers as well (I'm looking at *you,* house with 33 bedrooms). Rows containing an outlier in any of these columns were dropped, and the model was reran with everything else unchanged.
 
-It produced an R-squared value of **0.693** and and RMSE of **$137,906.** This was a considerable improvement on RMSE, and teh R-squared returned to where it was in the baseline.
+It produced an R-squared value of **0.693** and and RMSE of **$137,906.** This was a considerable improvement on RMSE, and the R-squared returned to where it was in the baseline.
 
 ![Scatter Plot Of Predicted And Actual Price For Model 3](/readme_images/model_remove_outlier.PNG)
 
