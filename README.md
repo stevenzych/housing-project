@@ -40,7 +40,9 @@ With the data cleaned, a baseline model could be built.
 
 # Baseline Model
 
-The first model takes all the data as-is, and uses every non-price column to predict the `price` column. No special modifications made, just plain and simple. The model's R-squared value was **0.692.** For the uninitiated, an R-squared value of **1** would mean that the linear regression model matches onto the predicted value (`price` here) *perfectly.* This is pretty unheard of. For a baseline model however, the R-squared of 0.692 is *not bad,* but we *can* do better. The following models aim to do just that.
+The first model takes all the data as-is, and uses every non-price column to predict the `price` column. No special modifications made, just plain and simple. The model's R-squared value was **0.692.** For the uninitiated, an R-squared value of **1** would mean that the linear regression model matches onto the predicted value (`price` here) *perfectly.* This is pretty unheard of. The next key metric, RMSE (root mean squared error, or, give-or-take how far off the model's guesses are) is **$213,446.**  For a baseline model however, the R-squared of 0.692 is *not bad,* but we *can* do better. The following models aim to do just that.
+
+![Scatter Plot Of Predicted And Actual Price For Baseline Model](/readme_images/model_base.PNG)
 
 # Model 2: Mean Normalization of Continuous Variables
 
@@ -50,7 +52,7 @@ This model produced a dip in R-squared, down to **0.689,** and I suspected it ma
 
 ![Scatter Plot Of Predicted And Actual Price For Mean Model 2](/readme_images/model_cont_var.PNG)
 
-This impacted the RMSE (root mean squared error, or, give-or-take how far off the model's guesses are) of the model greatly as well, bringing it up to **$213,306.** That's a pretty massive margin. The subsequent models attempt to address these concerns.
+This impacted the RMSE of the model ever so slightly, bringing it down just a hair to **$213,306.** That's still a pretty massive margin. The subsequent models attempt to address these concerns.
 
 # Model 3: Removing Outliers
 
